@@ -193,7 +193,7 @@ echo "HOSTNAME=$IP" >> restricted/host
 [ $IN_DOMAIN ] && echo "CONSUL_DOMAIN=$IN_DOMAIN" >> restricted/host
 [ $EX_DOMAIN ] && echo "HAPROXY_ADD_DOMAIN=$EX_DOMAIN" >> restricted/host
 [ "$MASTER" == "true" ] && echo "ZOOKEEPER_ID=$ZOOKEEPER_ID" >> restricted/host
-[ "$SLAVE" == "true" ] && echo "MESOS_SLAVE_PARAMS=\"$ATTRIBUTES --docker_remove_delay=1mins\"" >> restricted/host
+[ "$SLAVE" == "true" ] && echo "MESOS_SLAVE_PARAMS=\"$ATTRIBUTES --docker_remove_delay=10mins\"" >> restricted/host
 [ $AUTH ] && echo "MARATHON_PARAMS=\"--http_credentials ${AUTH}\"" >> restricted/host
 [ $VIP ] && echo "KEEPALIVED_VIP=$VIP" >> restricted/host
 [ "$ZOOKEEPER_ID" == "1" ] && echo 'CONSUL_PARAMS="-bootstrap-expect 3"' >> restricted/host

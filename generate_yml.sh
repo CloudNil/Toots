@@ -133,7 +133,6 @@ MESOS_SLAVE_PARAMS="--master=zk://${ZOOKEEPER_HOSTS}/mesos \
  --ip=${LISTEN_IP} \
  --docker_stop_timeout=5secs \
  --gc_delay=1days \
- --docker_remove_delay=10mins \
  --docker_socket=/tmp/docker.sock \
  --launcher=posix \
  --cgroups_limit_swap \
