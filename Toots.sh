@@ -93,9 +93,11 @@ fi
 #
 if [ "$MASTER" == "true" ] && [ "$SLAVE" == "false" ]; then
  echo '============Regist Master Service============='
+ echo 'Expose the master service such as marathon to the Edge Node or not'
+ echo '=============================================='
  echo '1. Yes'
  echo '2. No'
- echo '================================================'
+ echo '=============================================='
  read -p 'Please enter your choice(Default:1):' option
    case "$option" in
     "1"|"" ) 
@@ -117,6 +119,8 @@ fi
 #
 if [ "$SLAVE" == "true" ]; then
   echo '========Slave Node Mode========'
+  echo 'Stateless do not retain all data,on the contrary,Persistent do it but need NFS support'
+  echo '==============================='
   echo '1. Stateless'
   echo '2. Persistent'
   echo '==============================='
