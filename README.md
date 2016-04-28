@@ -57,7 +57,7 @@ NIC=<NIC>
 # REGISTRY_IP=192.168.2.91
 # CA=super.crt
 ```
-Replace the `<MasterIP_1>,<MasterIP_2>,<MasterIP_3>` and <NIC> with yours.
+Replace the `<MasterIP_1>,<MasterIP_2>,<MasterIP_3>` and `<NIC>` with yours.
 ##### Start Up:
 ```
 ./Toots.sh
